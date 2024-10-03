@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		9F6934F22CAF06C7003344D0 /* SwitfUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934F12CAF06C7003344D0 /* SwitfUIMemoApp.swift */; };
-		9F6934F42CAF06C7003344D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934F32CAF06C7003344D0 /* ContentView.swift */; };
 		9F6934F62CAF06C8003344D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6934F52CAF06C8003344D0 /* Assets.xcassets */; };
 		9F6934F92CAF06C8003344D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6934F82CAF06C8003344D0 /* Preview Assets.xcassets */; };
 		9F6934FB2CAF06C8003344D0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934FA2CAF06C8003344D0 /* Persistence.swift */; };
 		9F6934FE2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934FC2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld */; };
+		9F6935052CAF07C6003344D0 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6935042CAF07C6003344D0 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F6934EE2CAF06C7003344D0 /* SwitfUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitfUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6934F12CAF06C7003344D0 /* SwitfUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitfUIMemoApp.swift; sourceTree = "<group>"; };
-		9F6934F32CAF06C7003344D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F6934F52CAF06C8003344D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6934F82CAF06C8003344D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F6934FA2CAF06C8003344D0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9F6934FD2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwitfUIMemo.xcdatamodel; sourceTree = "<group>"; };
+		9F6935042CAF07C6003344D0 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				9F6934F12CAF06C7003344D0 /* SwitfUIMemoApp.swift */,
-				9F6934F32CAF06C7003344D0 /* ContentView.swift */,
+				9F6935042CAF07C6003344D0 /* MainListView.swift */,
+				9F6935062CAF07DC003344D0 /* CoreData */,
+				9F6935072CAF0805003344D0 /* Memory */,
 				9F6934F52CAF06C8003344D0 /* Assets.xcassets */,
-				9F6934FA2CAF06C8003344D0 /* Persistence.swift */,
-				9F6934FC2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld */,
 				9F6934F72CAF06C8003344D0 /* Preview Content */,
 			);
 			path = SwitfUIMemo;
@@ -71,6 +71,22 @@
 				9F6934F82CAF06C8003344D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F6935062CAF07DC003344D0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9F6934FA2CAF06C8003344D0 /* Persistence.swift */,
+				9F6934FC2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9F6935072CAF0805003344D0 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6935052CAF07C6003344D0 /* MainListView.swift in Sources */,
 				9F6934FB2CAF06C8003344D0 /* Persistence.swift in Sources */,
 				9F6934FE2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld in Sources */,
-				9F6934F42CAF06C7003344D0 /* ContentView.swift in Sources */,
 				9F6934F22CAF06C7003344D0 /* SwitfUIMemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

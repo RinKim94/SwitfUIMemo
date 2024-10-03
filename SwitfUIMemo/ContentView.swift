@@ -3,7 +3,7 @@
 //  SwitfUIMemo
 //
 //  Created by KimRin on 10/4/24.
-//
+//test
 
 import SwiftUI
 import CoreData

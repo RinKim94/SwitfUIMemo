@@ -13,6 +13,8 @@
 		9F6934FB2CAF06C8003344D0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934FA2CAF06C8003344D0 /* Persistence.swift */; };
 		9F6934FE2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6934FC2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld */; };
 		9F6935052CAF07C6003344D0 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6935042CAF07C6003344D0 /* MainListView.swift */; };
+		9F6935092CAF084E003344D0 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6935082CAF084E003344D0 /* Memo.swift */; };
+		9F69350B2CAF0906003344D0 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F69350A2CAF0906003344D0 /* MemoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9F6934FA2CAF06C8003344D0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9F6934FD2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwitfUIMemo.xcdatamodel; sourceTree = "<group>"; };
 		9F6935042CAF07C6003344D0 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		9F6935082CAF084E003344D0 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		9F69350A2CAF0906003344D0 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		9F6935072CAF0805003344D0 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
+				9F6935082CAF084E003344D0 /* Memo.swift */,
+				9F69350A2CAF0906003344D0 /* MemoStore.swift */,
 			);
 			path = Memory;
 			sourceTree = "<group>";
@@ -160,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6935052CAF07C6003344D0 /* MainListView.swift in Sources */,
+				9F69350B2CAF0906003344D0 /* MemoStore.swift in Sources */,
 				9F6934FB2CAF06C8003344D0 /* Persistence.swift in Sources */,
 				9F6934FE2CAF06C8003344D0 /* SwitfUIMemo.xcdatamodeld in Sources */,
 				9F6934F22CAF06C7003344D0 /* SwitfUIMemoApp.swift in Sources */,
+				9F6935092CAF084E003344D0 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

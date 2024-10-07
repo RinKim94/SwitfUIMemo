@@ -18,6 +18,7 @@ struct SwitfUIMemoApp: App {
         WindowGroup {
             MainListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(store)
             
         }
     }

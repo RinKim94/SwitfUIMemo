@@ -17,7 +17,7 @@ class MemoStore: ObservableObject {
             Memo(content: "test3", insertDate: Date.now.addingTimeInterval(3600 * -48))
         ]
     }
-    
+    //가장최신의 데이터가 배열 맨앞으로 갈수있도록
     func insert(memo: String) {
         list.insert(Memo(content: memo), at: 0)
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,10 @@
 		9F6935082CAF084E003344D0 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		9F69350A2CAF0906003344D0 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F2A37092CB6640C003E9CBB /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F6934EB2CAF06C7003344D0 /* Frameworks */ = {
@@ -61,6 +65,7 @@
 			children = (
 				9F6934F12CAF06C7003344D0 /* SwitfUIMemoApp.swift */,
 				9F6935042CAF07C6003344D0 /* MainListView.swift */,
+				9F2A37092CB6640C003E9CBB /* View */,
 				9F6935062CAF07DC003344D0 /* CoreData */,
 				9F6935072CAF0805003344D0 /* Memory */,
 				9F6934F52CAF06C8003344D0 /* Assets.xcassets */,
@@ -109,6 +114,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9F2A37092CB6640C003E9CBB /* View */,
 			);
 			name = SwitfUIMemo;
 			productName = SwitfUIMemo;

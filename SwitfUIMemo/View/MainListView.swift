@@ -33,6 +33,8 @@ struct MainListView: View {
                 .onDelete(perform: store.delete)
                 
                 
+                
+                
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")
@@ -50,6 +52,7 @@ struct MainListView: View {
             }
             
         }
+        .navigationViewStyle(.stack)
     }
 }
 

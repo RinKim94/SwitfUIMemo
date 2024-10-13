@@ -10,10 +10,13 @@ import SwiftUI
 struct DetailView: View {
     @ObservedObject var memo: Memo
     
+    
     @EnvironmentObject var store: MemoStore
     @State private var showComposer = false
     @State private var showDeleteAlert = false
+    @State private var showBottomBar = false
     @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -23,7 +26,7 @@ struct DetailView: View {
                             .padding()
                         Spacer(minLength: 0)
                     }
-                        
+                    
                     Text(memo.insertDate,style: .date)
                         .padding()
                         .font(.footnote)
@@ -31,8 +34,14 @@ struct DetailView: View {
                 }
             }
         }
+        
+        .sheet(isPresented: $showComposer) {
+            ComposeView(memo: memo)
+        }
+        
         .navigationTitle("메모 보기")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {showBottomBar = false}
         .toolbar {
             ToolbarItemGroup(placement: .bottomBar) {
                 Button {
@@ -51,7 +60,7 @@ struct DetailView: View {
                 } message: {
                     Text("메모를 삭제할까요?")
                 }
-
+                
                 Button {
                     showComposer = true
                 } label: {
@@ -59,10 +68,9 @@ struct DetailView: View {
                 }
             }
         }
-        .sheet(isPresented: $showComposer) {
-            ComposeView(memo: memo)
-        }
     }
+    
+        
 }
 
 #Preview {
